@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[25]:
+# In[9]:
 
 
 # Program for analyzing some of my facebook conversations with any one/many individual(s)
-import wikipedia
 import numpy as np
 import os
 import json
@@ -15,20 +14,34 @@ from datetime import datetime
 from wordcloud import WordCloud, STOPWORDS
 from PIL import Image
 
-path = 'D:/Python/fb convo analysis'
+path = 'D:\\Python\\fb convo analysis'
 os.chdir(path)
 
 
-# In[26]:
+# In[10]:
 
 
-# Function that gets text content from json --REPLACE WIKI WITH FB MESSAGES LATER
-def get_text(query):
-    # Get best matching title for given query
-    title = wikipedia.search(query)[0]
-    # Get wikipedia page for selected title
-    page = wikipedia.page(title)
-    return page.content
+# Function that gets json from directory
+def get_message(query):
+    message_path = os.path.join(path, 'facebook-shawnliu90\messages\inbox') # get a user input later
+    # searching through message_path for query
+    message_folder = os.listdir(message_path)
+    # combining message path with the file name
+    message_file = os.path.join(message_path, 
+                list(filter(lambda x: query in x, message_folder))[0], 
+                'message_1.json')
+    #message_file = os.path.join(message_file, 'message_1.json')
+    # loading message file as json
+    with open(message_file, 'r') as json_file:  
+        file = json.load(json_file)
+    return file
+    
+# Function that formats the message for various purposes
+def format_message(messages):
+    '''
+    extracting all text into one concatenated string to use for wordcloud
+    other NLP formats yet to be determined
+    '''  
 
 # Wordcloud function
 def create_wordcloud(text):
@@ -42,9 +55,10 @@ def create_wordcloud(text):
                   stopwords=stopwords)
     # Generating the wordcloud and saving it to wordcloud.png in path 
     wc.generate(text)
-    wc.to_file(os.path.join(path, 'wordcloud.png'))
-    
-create_wordcloud(get_text('python programming language'))
+    wc.to_file(os.path.join(path, 'fb_wordcloud.png'))
+
+text = get_message('AlysaaCoco')
+#create_wordcloud(get_message('insert friend name'))
 
 
 # In[ ]:
