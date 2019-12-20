@@ -22,7 +22,7 @@ Me and my girlfriend of around 5 months constantly debate over our history of ch
 I then thought it'd be really interesting if I somehow took all the messages we sent each other (we mostly used Facebook Messenger) and did an analysis on our message history. Luckily for me, Facebook has a feature where you can download all (and I mean ALL) of your personal data that you accumulated on the platform. Having known my girlfriend for over three years at university, it'd be interesting to compare our messaging behaviour before/after we started dating, in addition to exploring some sentiment analysis and more complicated NLP stuff later on.
 
 ## Description of my Current Process
-Check out my notebook for more details!
+Check out my notebook for more details! (Still a work in progress)
 
 ## Conclusion & Next Steps
 
