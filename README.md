@@ -24,8 +24,6 @@ I then thought it'd be really interesting if I somehow took all the messages we 
 ## Description of my Current Process
 Check out my notebook for more details! (Still a work in progress)
 
-## Conclusion & Next Steps
-
 ## Contact
 
 Feel free to email me at shawnliu30@gmail.com if you want to talk about this project or data science in general!
