@@ -1,6 +1,6 @@
 # girlfriend-conversation-analysis
 Repo that will be a one-stop-shop for all NLP analysis of my personal Facebook messenger conversation with my girlfriend.
-#### -- Project Status: [Active]
+#### -- Project Status: [Inactive]
 
 ## Project Intro/Objective
 The purpose of this project is to analyze my message history with important people in my life, most notably my girlfriend. I downloaded all my messages from Facebook to accomplish this feat.
