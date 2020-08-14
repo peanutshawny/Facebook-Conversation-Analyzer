@@ -1,5 +1,5 @@
 # girlfriend-conversation-analysis
-Repo that will be a one-stop-shop for all NLP analysis of my personal Facebook messenger conversation with my girlfriend.
+Repo that will be a one-stop-shop for all NLP analysis of my personal Facebook messenger conversation with my girlfriend. Added the one-year anniversary update!
 #### -- Project Status: [Inactive]
 
 ## Project Intro/Objective
